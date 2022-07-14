@@ -1,0 +1,172 @@
+.header-md::after{
+background-image: none !important;
+}
+
+ion-toolbar{
+    --background: var(--lightBlue);
+    padding-top: 15px !important;
+}
+
+ion-content{
+    &::part(background){
+        --background: var(--lightBlue); 
+        
+    }
+}
+
+ion-title{
+    color:white;
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-div{
+    width: 100%;
+    padding-left: 25px;
+    padding-Right: 25px;
+}
+
+.search-card{
+    background: var(--darkBlue);
+    border-radius: 15px;
+    padding-inline: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon{
+    margin-right: 5px;
+    font-size: 20px;
+    color: var(--lightBlue);
+}
+
+.serachbar{
+    color: var(--lightBlue);
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.weather-card{
+    background: var(--darkBlue);
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 20px !important;
+}
+
+.pad_0{
+    padding: 0% !important;
+}
+
+.today{
+    margin: 0%;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+.date{
+    margin: 0%;
+    color: white;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    text-align: right;
+}
+
+.cell-div{
+    display: flex;
+    height: 90px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.cell{
+    margin: 0%;
+    color: white;
+    font-weight: 400;
+    font-size: 58px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.weather-img{
+    height: 90px;
+    width: 90px;
+}
+
+.cell-symbol{
+    // margin: 0%;
+    color: #FED55B;
+    // font-weight: 500;
+    // font-size: 10% !important;
+    // font-family: 'Poppins', sans-serif;
+}
+
+.location-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loc-icon{
+    font-size: 15px;
+    color: white;
+    margin-right: 15px;
+}
+
+.loc-text{
+    margin: 0%;
+    color: white;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.huminity{
+    background: var(--darkBlue);
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 20px !important;
+    display: flex;
+    align-items: center;
+}
+
+.humidity-icon{
+    height: 40px;
+    margin-right: 5px;
+}
+
+.hum-per{
+    margin: 0%;
+    color: white;
+    font-weight: 700;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+}
+.hum-text{
+    margin: 0%;
+    color: white;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.extara{
+    background: var(--darkBlue);
+    border-radius: 15px;
+    margin-top: 20px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0%;
+    width: 90px;
+    height: 80px;
+}
+
+ion-card{
+    margin: 0% !important;
+}
+
+

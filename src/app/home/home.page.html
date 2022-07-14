@@ -1,0 +1,89 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Weather Forcast</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-div">
+    <ion-card class="search-card">
+      <ion-input placeholder="Search Your City" class="serachbar" ></ion-input>
+      <ion-icon name="search" class="search-icon"></ion-icon>
+    </ion-card>
+
+    <ion-card class="weather-card">
+      <ion-grid>
+        <ion-row class="weather-row">
+          <ion-col size="6">
+            <p class="today">Today</p>
+          </ion-col>
+          <ion-col size="6">
+            <p  class="date">{{weatherDetail?.LocalObservationDateTime}}</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <div class="cell-div">
+        <p class="cell">+{{weatherDetail?.Temperature?.Metric?.Value}}<sup class="cell-symbol">&#8451;</sup></p>
+        <ion-img src='../../assets/images/few-clouds.png' class="weather-img" ></ion-img>
+      </div>
+      <div class="location-div">
+        <ion-icon name="location" class="loc-icon"></ion-icon>
+        <p class="loc-text">India </p>
+      </div>
+    </ion-card>
+
+    <ion-grid style="padding: 0%;">
+      <ion-row >
+        <ion-col size="6">
+         <ion-card class="huminity">
+          <ion-img src='../../assets/images/humidity.png' class="humidity-icon"></ion-img>
+          <div>
+            <p class="hum-per">92%</p>
+            <p class="hum-text">Humidity</p>
+          </div>
+         </ion-card>
+        </ion-col>
+        <ion-col size="6">
+          <ion-card class="huminity">
+            <ion-img src='../../assets/images/pressure.png' class="humidity-icon"></ion-img>
+            <div>
+              <p class="hum-per">1010HPa</p>
+              <p class="hum-text">Presure</p>
+            </div>
+           </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid style="padding: 0%;">
+      <ion-row >
+        <ion-col size="4">
+         <ion-card class="extara">
+          <div>
+            <p class="hum-per">+{{weatherDetail?.Temperature?.Metric?.Value}}<sup class="cell-symbol">&#8451;</sup></p>
+            <p class="hum-text ion-text-center">Friday</p>
+          </div>
+         </ion-card>
+        </ion-col>
+        <ion-col size="4">
+          <ion-card class="extara">
+            <div>
+              <p class="hum-per">+{{weatherDetail?.Temperature?.Metric?.Value}}<sup class="cell-symbol">&#8451;</sup></p>
+              <p class="hum-text ion-text-center">Saturday</p>
+            </div>
+           </ion-card>
+        </ion-col>
+        <ion-col size="4">
+          <ion-card class="extara">
+            <div>
+              <p class="hum-per">+{{weatherDetail?.Temperature?.Metric?.Value}}<sup class="cell-symbol">&#8451;</sup></p>
+              <p class="hum-text ion-text-center">Sunday</p>
+            </div>
+           </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+
+</ion-content>
